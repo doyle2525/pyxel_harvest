@@ -15,7 +15,7 @@ class App:
             (pyxel.rndi(0, 140), i * 60, pyxel.rndi(0, 2), True) for i in range(6)
         ]
         self.bomb = [
-            (pyxel.rndi(0, 140), i * 60, pyxel.rndi(0, 2), True) for i in range(1)
+            (pyxel.rndi(0, 140), 60, pyxel.rndi(0, 2), True)
         ]
         pyxel.playm(0, loop=True)
         pyxel.run(self.update, self.draw)
